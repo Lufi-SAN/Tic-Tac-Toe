@@ -1,0 +1,17 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+}
+
+/* --Tic-Tac-Toe Board-- */
+#container {
+    height: 45vh;
+    width: 45vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+div:not(#container) {
+    border: 1px solid; 
+}
