@@ -9,12 +9,12 @@ class TicTacToe {
             [1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 4, 7],
             [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7]
           ];
-        this.choosePlayers();
+        this.clickPlayerButton();
     }
 
-// clickPlayerButton() {
-//     this.button.addEventListener("click", (event) => this.choosePlayers(event))
-// }
+clickPlayerButton() {
+    this.button.addEventListener("click", (event) => this.choosePlayers(event))
+}
 
 choosePlayers() {
     const player1 = prompt("What is your name, player 1?");
@@ -91,7 +91,7 @@ findWinner() {
         console.log(`This is a win for ${filteredXArray[0].player}`);
         this.resetCode();
     } else if (OMatches === true) {
-        console.log("This is a win for O")
+        console.log(`This is a win for ${filteredOArray[0].player}`)
         this.resetCode();
     } else {
         //Do nothing
